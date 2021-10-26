@@ -12,8 +12,8 @@ namespace SelectionStatements
             
             
             
-               Console.WriteLine("Welcome to the guessing game! Please pick a number between 1 - 10:");
-               int.Parse(Console.ReadLine());
+            Console.WriteLine("Welcome to the guessing game! Please pick a number between 1 - 10:");
+            num = int.Parse(Console.ReadLine());
 
 
             // how do i make the num variable declared in the while loop global (scope) available for the rest of the program 
