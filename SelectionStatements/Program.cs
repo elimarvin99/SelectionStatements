@@ -17,7 +17,14 @@ namespace SelectionStatements
 
 
             // how do i make the num variable declared in the while loop global (scope) available for the rest of the program 
-            if (num < favNumber)
+            //order sequence of if statements is important, because once a condition is met the program will exit the loop
+            //thats why the first condition we check for is if the userInput is out of range, because the later else if's would satisfy that
+            //condition because it is lower or higher than the random number
+            if (num < 1 || num > 10)
+            {
+                Console.WriteLine("Number out of range");
+            }
+            else if (num < favNumber)
             {
                 Console.WriteLine($"{num} is too low");
             }
